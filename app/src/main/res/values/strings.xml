@@ -27,7 +27,7 @@
         <item>Sleman City Hall XXI</item>
     </array>
 <!--    array untuk opsi jenis jursi-->
-    <array name="Pilih_jenis_kursi">
+    <array name="jenis_Kursi">
         <item>Regular</item>
         <item>Executive</item>
         <item>Deluxe</item>

@@ -5,6 +5,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#F5F5F5</color>
     <color name="dark_grey" >#B2B1B9</color>
+    <color name="darker_grey">#7D7C7C</color>
     <color name="beige">#FFF2D8</color>
     <color name="yellow">#f2c94c</color>
 </resources>

@@ -5,7 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PaymentPageActivity">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Details"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:paddingStart="100dp"/>
+    </LinearLayout>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -70,17 +89,16 @@
             android:datePickerMode="spinner"
             android:calendarViewShown="false"/>
         <TextView
-            android:id="@+id/show_jenis_kursi"
+            android:id="@+id/show_JenisKursi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="420dp"
-            android:text="Holder Jenis kursi ex. Regular"
             android:textSize="15sp"
             android:textColor="@color/almost_black"
             android:fontFamily="@font/poppins_regular"/>
         <TextView
-            android:id="@+id/show_jumlah_harga"
+            android:id="@+id/show_JumlahHarga"
             android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="300dp"
@@ -107,12 +125,12 @@
             android:textColor="@color/almost_black"
             android:fontFamily="@font/poppins_regular"/>
         <TextView
-            android:id="@+id/show_total_harga"
+            android:id="@+id/show_TotalHarga"
             android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="300dp"
             android:layout_marginTop="450dp"
-            android:text="Rp 70.000"
+            android:text="Rp 35.000"
             android:textSize="15sp"
             android:textColor="@color/almost_black"
             android:fontFamily="@font/poppins_regular"/>
@@ -126,7 +144,7 @@
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_semi_bold"/>
         <Spinner
-            android:id="@+id/spinner_metode_pembayaran"
+            android:id="@+id/spinner_metodePembayaran"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
@@ -164,6 +182,7 @@
                 android:spinnerMode="dropdown" />
         </RelativeLayout>
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/proceed_transaction_btn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
