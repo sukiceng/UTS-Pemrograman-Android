@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".HomepageActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Hello,"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:id="@+id/display_username"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Your username"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="20dp"
+        android:text="Trending Movie"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        list rekomendasi film-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/john_wick_ch4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="John Wick Chapter 4"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="55dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="2022"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="75dp"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text="Action, Crime, Thriller"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="95dp"
+                        android:drawableStart="@drawable/star"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="7.8/10"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="365dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/no_time_to_die" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="No Time To Die"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="2021"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text="Action, Thriller"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="70dp"
+                        android:drawableStart="@drawable/star"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="7.3/10"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="560dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/dead_reckoning"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="Mission Impossible Dead Reckoning Part 1"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="85dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="2022"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="100dp"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text="Action,Thriller"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="120dp"
+                        android:drawableStart="@drawable/star"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="8.0/10"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
